@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Report App</title>
+    <link rel="stylesheet" href="Citizen Report.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Citizen Reporting Solution</h1>
+        <form id="incidentForm">
+            <label for="title">Incident Title:</label>
+            <input type="text" id="title" required>
+            
+            <label for="content">Incident Description:</label>
+            <textarea id="content" required></textarea>
+            
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="accident">Accident</option>
+                <option value="fighting">Fighting</option>
+                <option value="rioting">Rioting</option>
+            </select>
+            
+            <button type="button" onclick="submitIncident()">Submit Incident</button>
+        </form>
+
+        <h2>Submitted Incidents</h2>
+        <ul id="incidentList"></ul>
+    </div>
+</body>
+</html>
